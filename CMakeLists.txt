@@ -21,4 +21,4 @@ add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
 CPMAddPackage("gh:prevter/sinaps#7d2f7b1")
 target_link_libraries(${PROJECT_NAME} sinaps)
 
-setup_geode_mod(${PROJECT_NAME})
+setup_geode_mod(${PROJECT_NAME} EXTERNALS "absolllute.megahack:9.0.0")
