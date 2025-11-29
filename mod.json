@@ -1,17 +1,20 @@
 {
-	"geode": "4.0.1",
+	"geode": "4.10.0",
 	"gd": { "win": "*" },
 	"id": "prevter.megahack-rebind",
 	"name": "Mega Hack Rebind",
-	"version": "v1.0.0",
+	"version": "v2.0.0",
 	"developer": "prevter",
-	"description": "Finally rebind Mega Hack keys!",
+	"description": "Rebind Mega Hack open UI key!",
 	"tags": ["customization", "interface"],
 	"links": { "source": "https://github.com/prevter/megahack-rebind" },
 	"dependencies": [{
 		"id": "geode.custom-keybinds",
 		"version": ">=v1.10.0",
-		"importance": "required",
-		"platforms": ["win"]
+		"importance": "required"
+	},{
+		"id": "absolllute.megahack",
+		"version": ">=v9.0.0",
+		"importance": "required"
 	}]
 }
