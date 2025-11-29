@@ -73,11 +73,8 @@ private:
 
 void onHotkey_hook(CoreDirector* self, int hotkeyID) {
     if (g_passthroughPress || hotkeyID != HOTKEY_TOGGLE_UI) {
-        log::debug("Passing through hotkey ID {}", hotkeyID);
         return self->onHotkey(hotkeyID);
     }
-
-    log::debug("Hotkey ID {} ignored", hotkeyID);
 }
 
 $on_mod(Loaded) {
